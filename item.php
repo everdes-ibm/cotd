@@ -50,7 +50,7 @@ if ( isset( $favorite ) ) {
 	include('include/insertratings.php');
 
 	$logmsg = '<'. $_SESSION['app'].'> { ';
-	$timezone = 'Australia/Sidney';
+	$timezone = 'America/Montevideo';
 	$date = new DateTime('now', new DateTimeZone($timezone));
 	$localtime = $date->format('Y:m:d H:i:s');
  	$logmsg = $logmsg . '"user" : "' .getRandomWord(10). '", "items" : [ ';
